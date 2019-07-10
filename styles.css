@@ -1,0 +1,154 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image: linear-gradient(hsl(243, 87%, 12%), hsl(243, 87%, 40%));
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.top{
+  position: fixed;
+}
+
+.top-bar {
+  margin-left: 5%;
+}
+
+.top-img {
+  position: absolute;
+  font-size: 25px;
+  top: 5%;
+  left: 50%;
+}
+.twitter {
+  position: relative;
+  font-size: 25px;
+  top: 5%;
+  left: 650%;
+}
+.facebook {
+  position: relative;
+  font-size: 25px;
+  top: 5%;
+  left: 700%;
+}
+
+.mail{
+  position: relative;
+  font-size: 25px;
+  top: 5%;
+  left: 750%;
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.cen {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 500px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.para {
+  color: hsl(0, 0%, 50%);
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 15px 15px 15px 0;
+  padding: 15px 60px 15px 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 3px #ececec;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 15px 40px;
+  background-color: hsl(163, 95%, 43%);
+  border: 1px solid #ddd;
+  color: white;
+  box-shadow: 3px 3px 3px #ececec;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.attribution {
+  position: absolute;
+  top: 100%;
+  left: 73%;
+  margin-top: 20%;
+  text-align: right;
+}
